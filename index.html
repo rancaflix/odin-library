@@ -13,7 +13,7 @@
     </header>
     <button id="new-book-btn">New Book</button>
     <div id="overlay"></div>
-    <div id="form-popup" >
+    <div id="form-popup">
         <form id="add-book-form" action="#">
             <h2>Add New Book</h2>
             <label for="title">Title</label>
@@ -26,6 +26,25 @@
             <input type="checkbox" name="read" id="read-status">
             <button type="submit" id="form-button">Add</button>
         </form>
+    </div>
+    <div id="edit-module-wrapper">
+        <div id="edit-book-form">
+            <h2>Edit Book</h2>
+            <form>
+              <label for="edit-title"><b>Title</b></label>
+              <input type="text" placeholder="Enter Title" name="edit-title" id="edit-title" required>
+          
+              <label for="edit-author"><b>Author</b></label>
+              <input type="text" placeholder="Enter Author" name="edit-author" id="edit-author" required>
+          
+              <label for="edit-pages"><b>Pages</b></label>
+              <input type="number" placeholder="Enter Number of Pages" name="edit-pages" id="edit-pages" required>
+          
+              <button type="submit" id="submit-edit-btn">Edit Book</button>
+            </form>
+            <button type="button" class="btn cancel" onclick="closeEditForm()">Close</button>
+          </div>
+          
     </div>
     <div id="card-area"></div>
     <script src="main.js" defer></script>
